@@ -1,16 +1,32 @@
-echo '<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <title>Mój projekt - Nawigacja</title>
+  <meta charset="UTF-8" />
+  <title>Todo App</title>
+  <style>
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="index.html">Strona główna</a></li>
-      <li><a href="about.html">O nas</a></li>
-      <li><a href="contact.html">Kontakt</a></li>
-    </ul>
+    <a href="index.html">Strona główna</a>
+    <a href="about.html">O aplikacji</a>
+    <a href="contact.html">Kontakt</a>
   </nav>
-  <h1>Witaj na stronie głównej!</h1>
+
+  <h1>Witaj w Todo App!</h1>
+  <!-- reszta Twojego kodu -->
 </body>
-</html>' > index.html
+</html>
