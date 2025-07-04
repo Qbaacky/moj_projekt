@@ -19,15 +19,19 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
+      working-directory: ./todo_app
       run: npm install
 
     - name: Run tests
+      working-directory: ./todo_app
       run: npm test
 
     - name: Build project
+      working-directory: ./todo_app
       run: npm run build
 
     - name: Check code quality
+      working-directory: ./todo_app
       run: npm run lint
 
   deploy:
@@ -38,9 +42,6 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
-
-    # Tutaj miejsce na kroki deploymentu, np. na AWS lub na własny serwer
-    # Możesz dodać skrypt deploy.sh lub użyć gotowych akcji GitHub
 
     - name: Deployment placeholder
       run: echo "Deploy your app here"
